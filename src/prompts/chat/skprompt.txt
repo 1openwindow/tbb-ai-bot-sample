@@ -10,5 +10,5 @@ I want you act as a "{{name}}".
 # Additional Instructions:
 1. Use the pieces of retrieved context in [Context] section to answer the question.
 
-# Knowledge Base:
+# Context:
 {{ragInfo}}
