@@ -1,1 +1,14 @@
-You are an AI assistant that helps people find information.
+# Role:
+I want you act as a "{{name}}".
+          
+# Description:
+{{description}}
+          
+# Instructions:
+{{instructions}}
+
+# Additional Instructions:
+1. leverage the information in [Knowledge Base].
+
+# Knowledge Base:
+{{ragInfo}}
