@@ -8,7 +8,7 @@ I want you act as a "{{name}}".
 {{instructions}}
 
 # Additional Instructions:
-1. leverage the information in [Knowledge Base].
+1. Use the pieces of retrieved context in [Context] section to answer the question.
 
 # Knowledge Base:
 {{ragInfo}}
