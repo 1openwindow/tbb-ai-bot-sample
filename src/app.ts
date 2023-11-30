@@ -40,7 +40,7 @@ type ApplicationTurnState = DefaultTurnState<ConversationState, UserState, TempS
 const planner = new AzureOpenAIPlanner<ApplicationTurnState>({
   apiKey: config.azureOpenAIKey,
   endpoint: config.azureOpenAIEndpoint,
-  defaultModel: "gpt-4-zihch",
+  defaultModel: process.env.AZURE_OPENAI_DEPLOYMENT_NAME,
   useSystemMessage: true,
   logRequests: true,
 });
