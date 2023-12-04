@@ -7,15 +7,15 @@
   "paths": {
     "/caculator": {
       "get": {
-        "summary": "Performs a calculation on two numbers",
-        "description": "Calculates the result of adding two numbers together and then multiplying the sum by three.",
+        "summary": "Calculate the result of adding two numbers and multiplying the sum by 3",
+        "operationId": "calculateNumbers",
         "parameters": [
           {
             "name": "firstNumber",
             "in": "query",
             "required": true,
             "schema": {
-              "type": "number"
+              "type": "string"
             }
           },
           {
@@ -23,7 +23,7 @@
             "in": "query",
             "required": true,
             "schema": {
-              "type": "number"
+              "type": "string"
             }
           }
         ]

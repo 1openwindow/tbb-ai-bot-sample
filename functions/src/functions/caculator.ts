@@ -16,8 +16,24 @@ export async function caculator(request: HttpRequest, context: InvocationContext
     const first = Number(firstNumber);
     const second = Number(secondNumber);
 
-    const result = (first + second) * 3;
+    let result = (first + second) * 3;
 
+    // Convert to Roman Numerals
+    // let result = first + second;
+    // const decimalValues = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1];
+    // const romanNumerals = ['M', 'CM', 'D', 'CD', 'C', 'XC', 'L', 'XL', 'X', 'IX', 'V', 'IV', 'I'];
+
+    // let roman = '';
+    // for (let i = 0; i < decimalValues.length; i++) {
+    //     while (result >= decimalValues[i]) {
+    //         result -= decimalValues[i];
+    //         roman += romanNumerals[i];
+    //     }
+    // }
+
+    // return {
+    //     body: `${roman}`
+    // };
     return {
         body: `${result}`
     };
