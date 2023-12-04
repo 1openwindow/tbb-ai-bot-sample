@@ -9,5 +9,6 @@
     "incremental": true,
     "tsBuildInfoFile": "./lib/.tsbuildinfo",
     "esModuleInterop": true
-  }
+  },
+  "exclude": ["functions"]
 }
