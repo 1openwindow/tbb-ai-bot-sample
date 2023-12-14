@@ -7,15 +7,14 @@
   "paths": {
     "/caculator": {
       "get": {
-        "summary": "Calculate the result of adding two numbers and multiplying the sum by 3",
-        "operationId": "calculateNumbers",
+        "summary": "Perform calculation",
         "parameters": [
           {
             "name": "firstNumber",
             "in": "query",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "number"
             }
           },
           {
@@ -23,25 +22,32 @@
             "in": "query",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "number"
+            }
+          }
+        ]
+      },
+      "post": {
+        "summary": "Perform calculation",
+        "parameters": [
+          {
+            "name": "firstNumber",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "number"
+            }
+          },
+          {
+            "name": "secondNumber",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "number"
             }
           }
         ]
       }
     }
-  },
-  "components": {
-    "securitySchemes": {
-      "ApiKeyAuth": {
-        "type": "apiKey",
-        "in": "header",
-        "name": "X-API-KEY"
-      }
-    }
-  },
-  "security": [
-    {
-      "ApiKeyAuth": []
-    }
-  ]
+  }
 }
